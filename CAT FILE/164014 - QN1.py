@@ -45,8 +45,8 @@ book1 = Book("Chop Rice", "Scooby Doo")
 book2 = Book("Enda Uoge", "Bugs Bunny")
 
 # MEMBERS
-member1 = LibraryMember("Jemo", "M001")
-member2 = LibraryMember("Brian", "M002")
+member1 = LibraryMember("Jemo", "Member 1")
+member2 = LibraryMember("Brian", "Member 2")
 
 # MEMBER 1
 member1.borrow_book(book1)  
