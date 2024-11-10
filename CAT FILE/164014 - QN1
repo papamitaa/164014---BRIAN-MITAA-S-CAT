@@ -20,17 +20,17 @@ class LibraryMember:
         if not book.is_borrowed:
             book.mark_as_borrowed()
             self.borrowed_books.append(book)
-            print(f"{self.name} has TAKEN '{book.title}'.")
+            print(f"{self.name} has taken '{book.title}'.")
         else:
-            print(f"'{book.title}' has been TAKEN by someone else.")
+            print(f"'{book.title}' has been taken by someone else.")
 
     def return_book(self, book):
         if book in self.borrowed_books:
             book.mark_as_returned()
             self.borrowed_books.remove(book)
-            print(f"{self.name} has BROUGHT BACK '{book.title}'.")
+            print(f"{self.name} has brought back'{book.title}'.")
         else:
-            print(f"{self.name} has not BROUGHT BACK '{book.title}'.")
+            print(f"{self.name} hasn't returned '{book.title}'.")
 
     def list_borrowed_books(self):
         if self.borrowed_books:
@@ -38,7 +38,7 @@ class LibraryMember:
             for book in self.borrowed_books:
                 print(f"- {book.title}")
         else:
-            print(f"{self.name} has not borrowed any books.")
+            print(f"{self.name} hasn't borrowed any books.")
 
 # BOOKS AVAILABLE
 book1 = Book("Chop Rice", "Scooby Doo")
